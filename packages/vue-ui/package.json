@@ -1,0 +1,43 @@
+{
+  "name": "vue-ui",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "description": "Vue UI Components",
+  "author": "Lee minwoo <minwoowho@gmail.com>",
+  "homepage": "https://github.com/minoong/lmw-frontend",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minoong/lmw-frontend",
+    "directory": "packages/vue-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/minoong/lmw-frontend/issues"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "clean-package": "../../../clean-package.config.json",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "clean-package": "2.2.0",
+    "vite-plugin-dts": "^3.0.2",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.4.2"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  }
+}
