@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "storybook dev -p 6006",
+    "storybook:react": "storybook dev -p 6006 -c .react_storybook/.storybook",
+    "storybook:vue": "storybook dev -p 6006 -c .vue_storybook/.storybook",
     "build-storybook": "storybook build"
   },
   "devDependencies": {
@@ -15,8 +16,12 @@
     "@storybook/blocks": "^7.0.24",
     "@storybook/react": "^7.0.24",
     "@storybook/react-vite": "^7.0.24",
-    "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/vue3": "^7.0.24",
+    "@storybook/vue3-vite": "^7.0.24",
     "@turbo/gen": "^1.9.7",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "eslint-plugin-storybook": "^0.6.12",
@@ -26,7 +31,9 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.24",
     "turbo": "latest",
-    "vite": "^4.3.9"
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vue": "^3.3.4"
   },
   "packageManager": "pnpm@7.15.0",
   "name": "lmw-frontend"
